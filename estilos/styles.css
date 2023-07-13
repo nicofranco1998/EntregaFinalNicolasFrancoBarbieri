@@ -1,0 +1,426 @@
+/* --------------- variable --------------- */
+:root {
+  --color-main: beige;
+  --color-primary: #0066ff;
+  --color-secondary: #02b5ff;
+  --color-blue2: #4a00e1;
+  --color-blue4: #5842bc;
+  --color-blue5: #157efb;
+  --color-blue6: #6640f4;
+  --color-blue7: #8169f1;
+  --color-lightBlue: #3a9fe3ff;
+  --color-darkBlue: #010049;
+  --color-darkBlue2: #1f227d;
+  --color-orange1: #ff7a41;
+  --color-orange2: #ffed4f;
+  --color-orange3: #f9a41f;
+  --color-red1: #cc2131;
+  --color-red2: #e73f7fff;
+  --color-green: #00c057;
+  --color-yellowGreen: #cef54b;
+  --color-gray: #eef4f8;
+  --color-gray2: #f0eff5;
+  --color-footer: #414040 ;
+  --color-main-grad: linear-gradient(to right, #ffed4f 0%, #e73f7f 100%);
+}
+
+
+/* Imagen banner */
+/* Main */
+/* Torta */
+/* Cafe */
+/* Pan */
+/* Video */
+/* Media Querys */
+/* Imagenes del menu */
+/* Carousel cafe */
+/* Carousel tortas */
+/* Nosotros */
+/* Footer */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1{
+  font-size: var(--title-size);
+}
+
+.containerBanner {
+  background-image: url(../imagenes/banner.jpg);
+  height: 1080px;
+  background-size: cover;
+  background-position: center;
+}
+
+.containerTexto {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.containerTexto p {
+  font-size: 16px;
+}
+.containerTexto h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+}
+.containerTexto a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.containerMain {
+  display: grid;
+  background-color: beige;
+  width: 100%;
+  background-size: cover;
+}
+
+.containerH2 h2 {
+  text-align: center;
+  align-items: center;
+  color: black;
+}
+.containerH2 h2 button {
+  background-color: peru;
+  height: 80px;
+  width: 300px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-size: 32px;
+  align-items: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.containerSugerenciasTexto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  min-width: 250px;
+}
+
+.containerTortas {
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+}
+.containerTortas a img {
+  display: flex;
+  height: 400px;
+  width: 260px;
+  border-radius: 60px;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.containerTortas p {
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.containerTortas p a {
+  align-items: center;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.containerCafes {
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+}
+.containerCafes a img {
+  display: flex;
+  height: 400px;
+  width: 260px;
+  border-radius: 60px;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.containerCafes p {
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.containerCafes p a {
+  align-items: center;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.containerPanes {
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+}
+.containerPanes a img {
+  display: flex;
+  height: 400px;
+  width: 260px;
+  border-radius: 60px;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.containerPanes p {
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.containerPanes p a {
+  align-items: center;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.containerVideo {
+  display: flex;
+  height: 1200px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(65, 64, 64);
+}
+.containerVideo iframe {
+  height: 920px;
+  width: 1280px;
+  border-radius: 60px;
+}
+
+/* menu */
+.containerImagenMenuBanner {
+  width: 100%;
+  height: 1200px;
+  background-image: url(../imagenes/blog-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.containerImagenesMenu{
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  column-gap: 2rem;
+  padding: 2rem;
+  background-color: beige;
+}
+
+.carousel3{
+  height: fit-content;
+  width: fit-content;
+}
+
+.containerT1 {
+  display: flex;
+}
+.containerT1 img {
+  display: flex;
+  height: 350px;
+  width: 350px;
+}
+.carousel-inner{
+  border-radius: 20px;
+}
+.containerT2 {
+  display: flex;
+}
+.containerT2 img {
+  display: flex;
+  height: 350px;
+  width: 350px;
+}
+
+.containerT3 {
+  display: flex;
+}
+.containerT3 img {
+  display: flex;
+  height: 350px;
+  width: 350px;
+
+}
+
+.containerMenus{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: beige;
+  column-gap: 20px;
+  padding: 20px;
+}
+.containerDiv1{
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.containerDiv1 img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
+.containerDiv2{
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.containerDiv2 img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+
+.containerMainCarouselNosotros {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+.containerFooters{
+  height: auto;
+  margin-bottom: 0px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-footer)
+}
+
+.containerGridFooters button{
+  background-color: antiquewhite;
+  border-radius: 45%;
+  width: 135px;
+  height: 45px;
+}
+
+/* Animacion imagenes apartado de nosotros*/
+
+.containerAnimacion1{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  
+  animation-duration: 5s;
+  animation-name: slidein;
+
+}
+
+.containerAnimacion1 img{
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+
+
+/* Formulario contacto */
+.containerFormulario{
+  background-color: beige;
+  height: 700px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+
+.containerBodyContacto{
+  background-image: url(../imagenes/blog-4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+/* Hoovers */
+
+.carousel-item img {
+  transition: filter 0.3s;
+}
+
+.carousel-item:hover img {
+  filter: blur(3px);
+}
+
+.containerH2:hover {
+  filter: brightness(85%);
+}
+
+.containerFooters button:hover {
+  filter: brightness(85%);
+}
+
+.containerCafes img:hover {
+  filter: brightness(65%);
+}
+.containerTortas img:hover {
+  filter: brightness(65%);
+}
+.containerPanes img:hover {
+  filter: brightness(65%);
+}
+.containerDiv1 img:hover{
+  filter: blur(1px);
+}
+.containerDiv2 img:hover{
+  filter: blur(1px);
+}
+
+/* media querys  */
+@media screen and (max-width: 450px) {
+  .containerSugerenciasTexto {
+    flex-direction: column;
+  }
+  .containerVideo {
+    width: 100%;
+    height: 100%;
+  }
+  .containerVideo iframe {
+    width: 250px;
+    height: 500px;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 1200px) {
+  .containerSugerenciasTexto {
+    flex-direction: column;
+  }
+}
